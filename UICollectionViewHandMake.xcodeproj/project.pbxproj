@@ -21,6 +21,11 @@
 		CEDAE3A218DA9071006B0E30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDAE38418DA9071006B0E30 /* UIKit.framework */; };
 		CEDAE3AA18DA9071006B0E30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEDAE3A818DA9071006B0E30 /* InfoPlist.strings */; };
 		CEDAE3AC18DA9071006B0E30 /* UICollectionViewHandMakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAE3AB18DA9071006B0E30 /* UICollectionViewHandMakeTests.m */; };
+		CEDAE3B718DA973F006B0E30 /* BlockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAE3B618DA973F006B0E30 /* BlockCell.m */; };
+		CEDAE3BB18DAC071006B0E30 /* VWCollectionViewLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAE3BA18DAC071006B0E30 /* VWCollectionViewLargeLayout.m */; };
+		CEDAE3BE18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAE3BD18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.m */; };
+		CEDAE3C518DAC441006B0E30 /* VWInfoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDAE3C318DAC441006B0E30 /* VWInfoDetailViewController.m */; };
+		CEDAE3C618DAC441006B0E30 /* VWInfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDAE3C418DAC441006B0E30 /* VWInfoDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		CEDAE3A718DA9071006B0E30 /* UICollectionViewHandMakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICollectionViewHandMakeTests-Info.plist"; sourceTree = "<group>"; };
 		CEDAE3A918DA9071006B0E30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEDAE3AB18DA9071006B0E30 /* UICollectionViewHandMakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewHandMakeTests.m; sourceTree = "<group>"; };
+		CEDAE3B518DA973F006B0E30 /* BlockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockCell.h; sourceTree = "<group>"; };
+		CEDAE3B618DA973F006B0E30 /* BlockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockCell.m; sourceTree = "<group>"; };
+		CEDAE3B918DAC071006B0E30 /* VWCollectionViewLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWCollectionViewLargeLayout.h; sourceTree = "<group>"; };
+		CEDAE3BA18DAC071006B0E30 /* VWCollectionViewLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWCollectionViewLargeLayout.m; sourceTree = "<group>"; };
+		CEDAE3BC18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWCollectionViewSingleColumnLayout.h; sourceTree = "<group>"; };
+		CEDAE3BD18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWCollectionViewSingleColumnLayout.m; sourceTree = "<group>"; };
+		CEDAE3C218DAC441006B0E30 /* VWInfoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWInfoDetailViewController.h; sourceTree = "<group>"; };
+		CEDAE3C318DAC441006B0E30 /* VWInfoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWInfoDetailViewController.m; sourceTree = "<group>"; };
+		CEDAE3C418DAC441006B0E30 /* VWInfoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VWInfoDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +126,19 @@
 		CEDAE38618DA9071006B0E30 /* UICollectionViewHandMake */ = {
 			isa = PBXGroup;
 			children = (
+				CEDAE3B818DAC035006B0E30 /* Layout */,
 				CEDAE38F18DA9071006B0E30 /* AppDelegate.h */,
 				CEDAE39018DA9071006B0E30 /* AppDelegate.m */,
 				CEDAE39218DA9071006B0E30 /* Main.storyboard */,
 				CEDAE39518DA9071006B0E30 /* ViewController.h */,
 				CEDAE39618DA9071006B0E30 /* ViewController.m */,
+				CEDAE3B518DA973F006B0E30 /* BlockCell.h */,
+				CEDAE3B618DA973F006B0E30 /* BlockCell.m */,
 				CEDAE39818DA9071006B0E30 /* Images.xcassets */,
 				CEDAE38718DA9071006B0E30 /* Supporting Files */,
+				CEDAE3C218DAC441006B0E30 /* VWInfoDetailViewController.h */,
+				CEDAE3C318DAC441006B0E30 /* VWInfoDetailViewController.m */,
+				CEDAE3C418DAC441006B0E30 /* VWInfoDetailViewController.xib */,
 			);
 			path = UICollectionViewHandMake;
 			sourceTree = "<group>";
@@ -150,6 +170,17 @@
 				CEDAE3A818DA9071006B0E30 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDAE3B818DAC035006B0E30 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				CEDAE3B918DAC071006B0E30 /* VWCollectionViewLargeLayout.h */,
+				CEDAE3BA18DAC071006B0E30 /* VWCollectionViewLargeLayout.m */,
+				CEDAE3BC18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.h */,
+				CEDAE3BD18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.m */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +261,7 @@
 			files = (
 				CEDAE39918DA9071006B0E30 /* Images.xcassets in Resources */,
 				CEDAE38B18DA9071006B0E30 /* InfoPlist.strings in Resources */,
+				CEDAE3C618DAC441006B0E30 /* VWInfoDetailViewController.xib in Resources */,
 				CEDAE39418DA9071006B0E30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDAE3BB18DAC071006B0E30 /* VWCollectionViewLargeLayout.m in Sources */,
+				CEDAE3C518DAC441006B0E30 /* VWInfoDetailViewController.m in Sources */,
+				CEDAE3BE18DAC089006B0E30 /* VWCollectionViewSingleColumnLayout.m in Sources */,
 				CEDAE39718DA9071006B0E30 /* ViewController.m in Sources */,
+				CEDAE3B718DA973F006B0E30 /* BlockCell.m in Sources */,
 				CEDAE39118DA9071006B0E30 /* AppDelegate.m in Sources */,
 				CEDAE38D18DA9071006B0E30 /* main.m in Sources */,
 			);
